@@ -36,7 +36,7 @@ jobs:
       - run: npm audit || true   
       - run:
           command: npm audit fix --force
-          when: on_fail       
+#          when: on_fail       
 
 
 workflows:
