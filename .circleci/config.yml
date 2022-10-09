@@ -33,9 +33,9 @@ jobs:
       - restore_cache:
           keys: 
             - "npm packages"
-      - run: npm audit    
+      - run: npm audit || true   
       - run:
-          command: npm audit fix
+          command: npm audit fix --force
           when: on_fail       
 
 
